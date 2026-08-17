@@ -1,0 +1,38 @@
+{
+    "1": {
+        "Factor": 65.0,
+        "Offset": 0.1,
+        "Limit1": 2,
+        "Limit3": -3,
+        "Pressure Measuring": 2,
+        "Min. Pressure Measuring": 1.9,
+        "Max. Pressure Measuring": 2.4
+    },
+    "3": {
+        "Factor": 65.0,
+        "Offset": 0.5,
+        "Limit1": 10.0,
+        "Limit3": -3.0,
+        "Pressure Measuring": 4.0,
+        "Min. Pressure Measuring": 3.6,
+        "Max. Pressure Measuring": 4.4
+    },
+    "2_old": {
+        "Factor": 360.0,
+        "Offset": 0.0,
+        "Limit1": 3.0,
+        "Limit3": -3.0,
+        "Pressure Measuring": 2.0,
+        "Min. Pressure Measuring": 1.6,
+        "Max. Pressure Measuring": 2.4
+    },
+    "2_new": {
+        "Factor": 60.0,
+        "Offset": 0.0,
+        "Limit1": 3.0,
+        "Limit3": -3.0,
+        "Pressure Measuring": 2.0,
+        "Min. Pressure Measuring": 1.6,
+        "Max. Pressure Measuring": 2.4
+    }
+}

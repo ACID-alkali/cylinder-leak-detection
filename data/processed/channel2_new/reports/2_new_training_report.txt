@@ -1,0 +1,36 @@
+Phase 3 Training Report - Channel: 2_new
+============================================================
+
+Validation set size: 1197
+Label distribution in validation:
+  Level 0: 1123 (93.8%)
+  Level 1: 72 (6.0%)
+  Level 2: 2 (0.2%)
+
+              precision    recall  f1-score   support
+
+  Normal (0)       1.00      1.00      1.00      1123
+ Warning (1)       0.96      1.00      0.98        72
+  Severe (2)       1.00      1.00      1.00         2
+
+    accuracy                           1.00      1197
+   macro avg       0.99      1.00      0.99      1197
+weighted avg       1.00      1.00      1.00      1197
+
+
+Top 15 Feature Importances:
+  1. leak_rolling_zscore_200: 0.1688
+  2. Leakrate: 0.1561
+  3. leak_spec_position: 0.1426
+  4. leak_roll_range_20: 0.0724
+  5. leak_roll_mean_5: 0.0643
+  6. leak_roll_mean_20: 0.0561
+  7. leak_margin_to_upper: 0.0546
+  8. leak_roll_std_20: 0.0545
+  9. leak_roll_slope_100: 0.0422
+  10. leak_nearest_margin: 0.0285
+  11. weekday: 0.0226
+  12. leak_roll_slope_50: 0.0185
+  13. leak_diff_1: 0.0166
+  14. leak_roll_slope_20: 0.0164
+  15. leak_roll_std_5: 0.0158

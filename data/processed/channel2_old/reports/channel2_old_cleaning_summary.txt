@@ -1,0 +1,18 @@
+Channel 2_old cleaning and feature engineering summary
+input_rows: 30936
+output_rows: 24861
+dropped_rows: 6075
+date_min: 2026-04-09 11:59:56.734000
+date_max: 2026-07-01 02:55:26.234000
+leak_out_of_spec_rows: 39
+pressure_out_of_range_rows: 2
+param_mismatch_rows: 6012
+calc_mismatch_rows: 93
+
+Generated feature groups:
+- basic cleaned numeric fields
+- parameter consistency flags
+- leak limit margins and near-limit flags
+- rolling mean/std/range/slope features (Optimized)
+- pressure delta and pressure gap features
+- time, shift, long-gap features

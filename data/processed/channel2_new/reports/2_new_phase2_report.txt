@@ -1,0 +1,31 @@
+============================================================
+Phase 2 Analysis Report - Channel: 2_new
+============================================================
+
+1. DATA OVERVIEW
+   Total rows: 5982
+   Valid rows for clustering (no NaN): 5982
+   Features used: ['Leakrate', 'leak_roll_mean_20', 'leak_roll_std_20', 'leak_roll_slope_20', 'leak_roll_slope_100', 'leak_spec_position', 'leak_rolling_zscore_200', 'pressure_diff_abs']
+   Date range: 2026-06-16 13:14:42.703000 ~ 2026-07-01 02:55:26.234000
+   Leakrate: mean=0.1203, std=0.1566, min=-0.2580, max=11.2560
+
+2. KMEANS CLUSTERING
+   Optimal K: 2
+   Cluster 0: 5981 samples (100.0%), avg Leakrate=0.1184
+   Cluster 1: 1 samples (0.0%), avg Leakrate=11.2560
+
+3. DBSCAN CLUSTERING
+   Noise: 21 samples (0.4%)
+   Cluster 0: 5961 samples (99.6%)
+
+4. ISOLATION FOREST ANOMALY DETECTION
+   Normal: 5682 (95.0%)
+   Anomaly: 300 (5.0%)
+   Anomaly score range: [-0.2628, 0.1838]
+
+   Anomaly samples characteristics:
+     Leakrate: mean=0.0815, std=0.6651
+     Spec Position: mean=0.5136
+     Short-term Slope: mean=-0.011526
+
+============================================================

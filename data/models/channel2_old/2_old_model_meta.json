@@ -1,0 +1,35 @@
+{
+    "channel": "2_old",
+    "features": [
+        "Leakrate",
+        "leak_roll_mean_5",
+        "leak_roll_mean_20",
+        "leak_roll_std_5",
+        "leak_roll_std_20",
+        "leak_roll_slope_5",
+        "leak_roll_slope_20",
+        "leak_roll_slope_50",
+        "leak_roll_slope_100",
+        "leak_roll_range_20",
+        "leak_spec_position",
+        "leak_margin_to_upper",
+        "leak_nearest_margin",
+        "leak_diff_1",
+        "leak_diff_5",
+        "leak_rolling_zscore_200",
+        "pressure_diff_abs",
+        "Pressure Measured",
+        "pressure_fill_minus_measure",
+        "hour",
+        "weekday",
+        "seconds_since_prev"
+    ],
+    "n_classes": 3,
+    "class_names": [
+        "Normal",
+        "Warning",
+        "Severe"
+    ],
+    "train_rows": 19849,
+    "val_rows": 4963
+}
