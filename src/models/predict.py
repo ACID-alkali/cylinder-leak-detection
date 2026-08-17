@@ -25,9 +25,10 @@ import pandas as pd
 RISK_NAMES = {0: "正常 (Normal)", 1: "预警 (Warning)", 2: "高危 (Severe)"}
 RISK_COLORS = {0: "#4CAF50", 1: "#FF9800", 2: "#F44336"}
 
-# 默认路径
-DEFAULT_MODEL_DIR = Path(r"d:\Codes\Shangqishixi\data\models")
-DEFAULT_DATA_DIR = Path(r"d:\Codes\Shangqishixi\data\processed")
+# 动态解析项目根目录，兼容本地 Windows 和 Streamlit Cloud (Linux)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+DEFAULT_MODEL_DIR = PROJECT_ROOT / "data" / "models"
+DEFAULT_DATA_DIR = PROJECT_ROOT / "data" / "processed"
 
 
 class RiskPredictor:
